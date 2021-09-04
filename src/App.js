@@ -11,12 +11,15 @@ import Footer from './components/Footer.js';
 import Projects from './components/Projects.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
+import SinglePagePDFViewer from './components/single-page.js';
+import Resume from './components/Resume.pdf';
 
 export default class App extends Component {
   render() {
   return (
-    <div>
+    <div className="App">
       <Header />
+
       <Router>
         <Switch>
           <Route
@@ -41,6 +44,7 @@ export default class App extends Component {
           />
         </Switch>
       </Router>
+      <SinglePagePDFViewer pdf={Resume} />
       <Footer />
     </div>
   );
