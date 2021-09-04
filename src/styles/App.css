@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: gold;
+    background-color: rgba(123, 7, 51, 0.475);
+    position: fixed;
+    width: 100%;
+    background-color: rgba(58, 13, 65, 0.899);
+    box-shadow: 15px 5px 35px 5px black;
+    padding: 5px;
+}
+.link {
+    color:rgb(17, 0, 41);
+    font-family: 'Cormorant Garamond';
+    font-weight: bold;
+}
+
+.head-links {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(184, 135, 180, 0.495);
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px;
+    font-size: 2.7vmin;
+}
+
+.head-links:hover {
+    box-shadow: 5px 5px 15px rgb(65, 10, 10);
+}
+
+.link:hover {
+    color: rgb(215, 199, 213);
+}
+/* justify-content: center;*/
+body {
+    display: flex;
+    background-image: url('rose.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

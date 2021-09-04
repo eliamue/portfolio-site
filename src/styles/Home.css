@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+h1 {
+  background-color: purple;
+  margin-top: 80px;
+  background-color: rgba(48, 4, 14, 0.797);
+  box-shadow: 5px 15px 15px rgb(50, 2, 2);
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.name-main {
+  display: flex;
+  font-family: 'Cormorant Garamond';
+  color: rgb(156, 202, 210);
+  text-shadow: 5px 8px 10px black;
+  font-variant: small-caps;
+  font-size: 6vmin;
+  text-align: center;
+  text-shadow: 6px 5px 8px black;
+  padding-top: 50px;
+}
