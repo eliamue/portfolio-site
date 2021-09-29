@@ -1,4 +1,6 @@
 .projects-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     align-self: center;
     align-content: center;
@@ -6,6 +8,8 @@
     justify-self: center;
     justify-items: center;
     text-align: center;
+    overflow: auto;
+    margin-top: 10vmin;
 }
 
 header {
@@ -28,4 +32,18 @@ header {
     margin-top: 0;
     font-family: Alice;
     font-variant: small-caps;
+}
+
+.safesrc, .torr, .triforce {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 3px double rgb(15, 29, 1);
+    margin: 5vmin;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.safesrc-logo {
+    height: 20vmin;
 }
