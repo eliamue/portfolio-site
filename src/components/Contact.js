@@ -5,10 +5,8 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="contacts">
-        poopy
         <h3>Contact Me</h3>
         <p className="linkedin">
-          asdfaxc
           <a
             className="li-link"
             href="https://www.linkedin.com/in/eliamue/"
@@ -17,9 +15,7 @@ export default class Contact extends Component {
           >
             LinkedIn
           </a>
-          sdfg
         </p>
-        dfsbvdfxt
           <p className="github">
             <a
               className="gh-link"

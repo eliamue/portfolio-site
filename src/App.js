@@ -5,21 +5,16 @@ import {
   Route, 
   Switch 
 } from 'react-router-dom';
-import Header from './components/Header.js';
 import Home from './components/Home.js';
 import Footer from './components/Footer.js';
 import Projects from './components/Projects.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
-import SinglePagePDFViewer from './components/single-page.js';
-import Resume from './components/Resume.pdf';
 
 export default class App extends Component {
   render() {
   return (
     <div className="App">
-      <Header />
-
       <Router>
         <Switch>
           <Route
@@ -43,9 +38,10 @@ export default class App extends Component {
             render={(routerProps) => <Contact {...routerProps} />}
           />
         </Switch>
+        <footer>
+          <Footer />
+        </footer>
       </Router>
-      <SinglePagePDFViewer pdf={Resume} />
-      <Footer />
     </div>
   );
 }
