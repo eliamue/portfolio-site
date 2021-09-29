@@ -1,0 +1,31 @@
+.projects-container {
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    color: gold;
+    background-color: rgba(94, 35, 3, 0.721);
+    position: absolute;
+    width: 100%;
+    box-shadow: 15px 5px 35px 5px black;
+    justify-content: center;
+    text-align: center;
+}
+
+.proj-title {
+    padding: 5px;
+    margin: 5px;
+    font-size: 30px;
+    height: fit-content;
+    margin-top: 0;
+    font-family: Alice;
+    font-variant: small-caps;
+}

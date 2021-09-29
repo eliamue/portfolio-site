@@ -1,11 +1,11 @@
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     color: gold;
     background-color: rgba(94, 35, 3, 0.721);
-    position: fixed;
+    position: absolute;
     width: 100%;
     box-shadow: 15px 5px 35px 5px black;
-    padding: 5px;
+    justify-content: center;
+    text-align: center;
 }

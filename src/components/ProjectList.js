@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import '../styles/Projects.css';
 
 export default class ProjectList extends Component {
       render() {
             return (
               <div>
                 <section className="project-list">
-                  <h2>Projects</h2>
                   <p className="safesrc">safeSRC</p>
                   <p className="torr">
                     Tales of Torr: The Quest to Defeat the Everlasting Dragon

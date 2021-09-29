@@ -7,11 +7,11 @@ h1 {
 
 .name-main {
   display: flex;
-  position: relative;
   font-family: 'Cormorant Garamond';
   color: rgb(222, 183, 154);
   text-shadow: 5px 15px 25px rgb(31, 29, 2);
   font-variant: small-caps;
   font-size: 6vmin;
+  margin: 20vmin;
   text-align: center;
 }

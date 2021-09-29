@@ -1,53 +1,40 @@
-.footer {
+.nav-bar {
   display: flex;
-  flex-direction: row;
   bottom: 0;
-  width: 100%;
-  height: 15vmin;
+  flex-direction: row;
   background-color: rgba(91, 4, 6, 0.466);
   color: gold;
   overflow: visible;
-  text-align: center;
-  border-radius: 20px;
-  padding: 5px;
+  padding: 10px;
   align-items: center;
-  position: relative;
+  text-align: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
 }
 
-.link {
-    color:rgb(17, 0, 41);
-    font-family: 'Cormorant Garamond';
-    font-weight: bold;
-    align-self: center;
-    text-align: center;
-    justify-content: space-between;
-}
-
-.head-links {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.abt, .cont, .home, .prj {
+.abt,
+.cont,
+.hme,
+.prj {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-direction: row;
   background-color: rgba(184, 142, 3, 0.495);
   border-radius: 20px;
-  margin: 15px;
-  padding: 10px;
+  padding: 8px;
   font-size: 2.7vmin;
   border: 3px double rgb(50, 0, 0);
 }
 
-.abt:hover, .cont:hover, .home:hover, .prj:hover {
-    box-shadow: 5px 5px 15px rgb(65, 10, 10);
+.abt:hover,
+.cont:hover,
+.home:hover,
+.prj:hover {
+  box-shadow: 5px 5px 15px rgb(65, 10, 10);
 }
 
-.link:hover {
-    color: rgb(215, 199, 213);
+.nav-link:hover {
+  color: rgb(215, 199, 213);
+  font-weight: bolder;
 }

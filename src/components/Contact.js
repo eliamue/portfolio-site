@@ -5,27 +5,31 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="contacts">
-        <h3>Contact Me</h3>
-        <p className="linkedin">
-          <a
-            className="li-link"
-            href="https://www.linkedin.com/in/eliamue/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </p>
-          <p className="github">
+        
+        <section className="cont-container">
+          <header>
+            <h1 className="cont-title">Contact Me</h1>
+          </header>
+        </section>
+
+        <section className="cont-links">
             <a
-              className="gh-link"
-              href="https://www.github.com/eliamue"
+              className="li-link"
+              href="https://www.linkedin.com/in/eliamue/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub
+              LinkedIn
             </a>
-          </p>
+              <a
+                className="gh-link"
+                href="https://www.github.com/eliamue"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+          </section>
       </div>
     );
   }

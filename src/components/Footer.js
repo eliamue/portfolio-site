@@ -1,35 +1,36 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
 
 export default class Footer extends Component {
       render() {
             return (
-              <div>
-                <section className="footer">
-                  <p className="head-links">
-                    <p className="cont">
-                    <a href="/contact" className="link" alt="contact">
-                      Contact Me
-                    </a>
-                  </p>
-                  <p className="abt">
-                    <a href="/about" className="link" alt="about">
-                      About Me
-                    </a>
-                  </p>
-                  <p className="prj">
-                    <a href="/projects" className="link" alt="projects">
-                      Projects
-                    </a>
-                  </p>
-                  <p className="home">
-                    <a href="/" className="link" alt="home">
-                      Home
-                    </a>
-                  </p>
-                  </p>
-                </section>
-              </div>
+              <nav className="nav-bar">
+
+                    <span className="cont">
+                      <Link className="nav-link" to={'/contact'}>
+                        Contact
+                      </Link>
+                    </span>
+
+                    <span className="abt">
+                      <Link className="nav-link" to={'/about'}>
+                        About
+                      </Link>
+                    </span>
+
+                    <span className="prj">
+                      <Link className="nav-link" to={'/projects'}>
+                        Projects
+                      </Link>
+                    </span>
+
+                    <span className="hme">
+                      <Link className="nav-link" to={'/'}>
+                        Home
+                      </Link>
+                    </span>
+              </nav>
             );
       }
 }
