@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
 import '../styles/Projects.css';
 import safesrc from '../styles/safesrc.png';
+import torr from '../styles/torr.png';
+import triforce from '../styles/triforce.png';
 
 export default class Projects extends Component {
       render() {
             return (
-              <div>
-                <header>
-                  <h1 className="proj-title">Projects</h1>
-                </header>
+              <div className="projects">
+                <section className="proj-container">
+                  <header>
+                    <h1 className="proj-title">Projects</h1>
+                  </header>
+                </section>
 
-                <section className="projects-container">
+                <section className="project-list">
                   <section className="safesrc">
-                    <img className="safesrc-logo" src={safesrc} alt="safeSRC logo" />
-                    <h1>
+                    <img
+                      className="safesrc-logo"
+                      src={safesrc}
+                      alt="safeSRC logo"
+                    />
+                    <h1 className="project-name">
                       <a
                         className="safesrc-link"
                         href="https://safesrc.netlify.app/"
@@ -27,7 +35,8 @@ export default class Projects extends Component {
                   </section>
 
                   <section className="torr">
-                    <h1>
+                    <img className="torr-logo" src={torr} alt="torr logo" />
+                    <h1 className="project-name">
                       <a
                         className="torr-link"
                         href="https://missaelortiz.github.io/The-Tales-of-Torr-The-Quest-to-Defeat-the-Everlasting-Dragon/"
@@ -42,7 +51,12 @@ export default class Projects extends Component {
                   </section>
 
                   <section className="triforce">
-                    <h1>
+                    <img
+                      className="triforce-logo"
+                      src={triforce}
+                      alt="triforce logo"
+                    />
+                    <h1 className="project-name">
                       <a
                         className="triforce-link"
                         href="https://triforce-trivia.netlify.app/"
@@ -54,7 +68,6 @@ export default class Projects extends Component {
                     </h1>
                     <p>Description</p>
                   </section>
-
                 </section>
               </div>
             );

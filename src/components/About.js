@@ -5,7 +5,6 @@ export default class About extends Component {
   render() {
     return (
       <div className="about">
-
         <section className="about-container">
           <header>
             <h1 className="about-title">About Me</h1>
@@ -16,7 +15,6 @@ export default class About extends Component {
           <p>I'm a human person</p>
           <p>Wow</p>
         </section>
-        
       </div>
     );
   }
