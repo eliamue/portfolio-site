@@ -6,7 +6,6 @@ export default class Footer extends Component {
       render() {
             return (
               <nav className="nav-bar">
-
                     <span className="cont">
                       <Link className="nav-link" to={'/contact'}>
                         Contact

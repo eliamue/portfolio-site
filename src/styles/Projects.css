@@ -2,21 +2,21 @@
 .torr,
 .triforce {
     display: flex;
-    flex-direction: column;
-    border: 3px double rgb(15, 29, 1);
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
-    margin: 2vmin;
-    border-radius: 20px;
-    background-color: rgba(107, 49, 13, 0.735);
     width: fit-content;
-    padding: 2vmin;
+    padding: 1vmin;
 }
 
 .project-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 15vmin;
-    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
 .safesrc-logo {
@@ -24,6 +24,12 @@
     width: 20vmin;
     align-self: center;
     padding: 1vmin;
+}
+
+.project-name:hover {
+    cursor: pointer;
+        box-shadow: 5px 5px 30px 5px rgb(0, 0, 0);
+        color: rgb(169, 126, 69);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -105,7 +111,6 @@ header {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    margin-top: 16px;
 }
 
 .project-name {

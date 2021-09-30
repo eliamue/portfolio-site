@@ -1,6 +1,4 @@
 header {
-    display: flex;
-    flex-direction: row;
     color: gold;
     background-color: rgba(94, 35, 3, 0.721);
     position: absolute;

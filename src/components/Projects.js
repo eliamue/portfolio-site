@@ -3,73 +3,76 @@ import '../styles/Projects.css';
 import safesrc from '../styles/safesrc.png';
 import torr from '../styles/torr.png';
 import triforce from '../styles/triforce.png';
+import SafesrcDescription from './descriptions/SafesrcDescription';
+import TorrDescription from './descriptions/TorrDescription';
+import TriforceDescription from './descriptions/TriforceDescription';
 
 export default class Projects extends Component {
-      render() {
-            return (
-              <div className="projects">
-                <section className="proj-container">
-                  <header>
-                    <h1 className="proj-title">Projects</h1>
-                  </header>
-                </section>
+  state = {
+    srcseen: false,
+    torrseen: false,
+    trifseen: false
+  };
 
-                <section className="project-list">
-                  <section className="safesrc">
-                    <img
-                      className="safesrc-logo"
-                      src={safesrc}
-                      alt="safeSRC logo"
-                    />
-                    <h1 className="project-name">
-                      <a
-                        className="safesrc-link"
-                        href="https://safesrc.netlify.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        safeSRC
-                      </a>
-                    </h1>
-                    <p>Description</p>
-                  </section>
+  toggleSafe = () => {
+    this.setState({
+      srcseen: !this.state.srcseen,
+    });
+  };
 
-                  <section className="torr">
-                    <img className="torr-logo" src={torr} alt="torr logo" />
-                    <h1 className="project-name">
-                      <a
-                        className="torr-link"
-                        href="https://missaelortiz.github.io/The-Tales-of-Torr-The-Quest-to-Defeat-the-Everlasting-Dragon/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Tales of Torr: The Quest to Defeat the Everlasting
-                        Dragon
-                      </a>
-                    </h1>
-                    <p>Description</p>
-                  </section>
+  toggleTorr = () => {
+    this.setState({
+      torrseen: !this.state.torrseen,
+    });
+  };
 
-                  <section className="triforce">
-                    <img
-                      className="triforce-logo"
-                      src={triforce}
-                      alt="triforce logo"
-                    />
-                    <h1 className="project-name">
-                      <a
-                        className="triforce-link"
-                        href="https://triforce-trivia.netlify.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Triforce Trivia
-                      </a>
-                    </h1>
-                    <p>Description</p>
-                  </section>
-                </section>
-              </div>
-            );
-      }
+  toggleTrif = () => {
+    this.setState({
+      trifseen: !this.state.trifseen,
+    });
+  };
+
+  render() {
+    return (
+      <div className="projects">
+        <section className="proj-container">
+          <header>
+            <h1 className="proj-title">Projects</h1>
+          </header>
+        </section>
+
+        <section className="project-list">
+          <section className="safesrc">
+            <button className="project-name" onClick={this.toggleSafe}>
+            <img className="safesrc-logo" src={safesrc} alt="safeSRC logo" />
+              <h3>safeSRC</h3>
+              {this.state.srcseen ? (
+                <SafesrcDescription toggle={this.toggleSafe} />
+              ) : null}
+            </button>
+          </section>
+
+          <section className="torr">
+            <button className="project-name" onClick={this.toggleTorr}>
+            <img className="torr-logo" src={torr} alt="torr logo" />
+              <h3>Tales of Torr:</h3> <h4>The Quest to Defeat the Everlasting Dragon</h4>
+              {this.state.torrseen ? (
+                <TorrDescription toggle={this.toggleTorr} />
+              ) : null}
+            </button>
+          </section>
+
+          <section className="triforce">
+            <button className="project-name" onClick={this.toggleTrif}>
+            <img className="triforce-logo" src={triforce} alt="triforce logo" />
+              <h3>Triforce Trivia</h3>
+              {this.state.trifseen ? (
+                <TriforceDescription toggle={this.toggleTrif} />
+              ) : null}
+            </button>
+          </section>
+        </section>
+      </div>
+    );
+  }
 }

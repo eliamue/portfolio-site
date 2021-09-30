@@ -1,0 +1,29 @@
+.plink, .project-sites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.close {
+    color: rgb(199, 15, 46);
+    font-size: large;
+    height: fit-content;
+}
+
+.modal_content {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-name {
+    color: rgb(232, 197, 0);
+    border-radius: 20px;
+    background-color: rgba(97, 24, 76, 0.913);
+    margin: 3vmin;
+    margin-top: 5vmin;
+    font-family: Alice;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 5px 5px 30px 5px rgb(33, 6, 6);
+}
