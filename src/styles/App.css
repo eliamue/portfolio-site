@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow-y: visible;
+  overflow-y: hidden;
   overflow-x: hidden;
   bottom: 0;
 }

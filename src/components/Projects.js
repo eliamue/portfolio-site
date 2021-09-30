@@ -52,6 +52,16 @@ export default class Projects extends Component {
             </button>
           </section>
 
+          <section className="triforce">
+            <button className="project-name" onClick={this.toggleTrif}>
+            <img className="triforce-logo" src={triforce} alt="triforce logo" />
+              <h3>Triforce Trivia</h3>
+              {this.state.trifseen ? (
+                <TriforceDescription toggle={this.toggleTrif} />
+              ) : null}
+            </button>
+          </section>
+          
           <section className="torr">
             <button className="project-name" onClick={this.toggleTorr}>
             <img className="torr-logo" src={torr} alt="torr logo" />
@@ -62,15 +72,6 @@ export default class Projects extends Component {
             </button>
           </section>
 
-          <section className="triforce">
-            <button className="project-name" onClick={this.toggleTrif}>
-            <img className="triforce-logo" src={triforce} alt="triforce logo" />
-              <h3>Triforce Trivia</h3>
-              {this.state.trifseen ? (
-                <TriforceDescription toggle={this.toggleTrif} />
-              ) : null}
-            </button>
-          </section>
         </section>
       </div>
     );

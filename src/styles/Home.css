@@ -7,12 +7,63 @@ h1 {
 
 .name-main {
   display: flex;
+  flex-direction: column;
   font-family: 'Cormorant Garamond';
-  color: rgb(222, 183, 154);
+  color: rgb(0, 0, 0);
   text-shadow: 5px 15px 25px rgb(31, 29, 2);
   font-variant: small-caps;
   font-size: 6vmin;
-  margin: 20vmin;
-  margin-top: 30vmin;
+  margin-top: 40vmin;
   text-align: center;
+}
+
+.first-name {
+    margin-bottom: 0;
+    animation: easein linear 2s;
+    -webkit-animation: easein linear 2s;
+    -moz-animation: easein linear 2s;
+    -o-animation: easein linear 2s;
+    -ms-animation: easein linear 2s;
+}
+
+@keyframes easein {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+.last-name {
+  margin-top: 0;
+  animation-delay: 4s;
+    animation: easein linear 2s;
+    -webkit-animation: easein linear 2s;
+    -moz-animation: easein linear 2s;
+    -o-animation: easein linear 2s;
+    -ms-animation: easein linear 2s;
+}
+
+@keyframes easein {
+  from {
+    opacity: 2%;
+    margin-left: 100%;
+  }
+
+  to {
+    opacity: 100%;
+    margin-left: 0%;
+  }
+}
+
+
+.role {
+  flex-wrap: nowrap;
+  animation-duration: 10s;
+  animation-name: fadein;
+  font-family: Alice;
+  margin-top: 0;
+  min-width: max-content;
+}
+
+@keyframes fadein {
+0% {opacity:0;}
+100% {opacity:1;}
 }

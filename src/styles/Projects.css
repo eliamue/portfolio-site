@@ -2,18 +2,37 @@
 .torr,
 .triforce {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
     width: fit-content;
     padding: 1vmin;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-top:100%;
+    width:300%;
+    opacity: 2%;
+  }
+
+  to {
+    margin-top:0%;
+    width:100%;
+    opacity: 100%;
+  }
 }
 
 .project-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 15vmin;
     justify-items: center;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -104,6 +123,7 @@ header {
 .projects {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20vmin;
 }
 
 .proj-container {
