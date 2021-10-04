@@ -1,5 +1,5 @@
 import './styles/App.css';
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { 
   BrowserRouter as Router, 
   Route, 
@@ -11,8 +11,7 @@ import About from './components/About.js';
 import Contact from './components/Contact.js';
 import Footer from './components/Footer';
 
-export default class App extends Component {
-  render() {
+const App = () => {
   return (
     <div>
       <Router>
@@ -43,4 +42,5 @@ export default class App extends Component {
     </div>
   );
 }
-}
+
+export default App;

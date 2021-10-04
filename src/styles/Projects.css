@@ -2,12 +2,13 @@
 .torr,
 .triforce {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     align-items: center;
     width: fit-content;
     padding: 1vmin;
+    flex-wrap: wrap;
     animation-duration: 3s;
     animation-name: slidein;
     animation-direction: alternate;

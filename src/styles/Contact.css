@@ -11,7 +11,8 @@
 }
 
 .li-link,
-.gh-link {
+.gh-link,
+.e-link {
   padding: 20px;
   margin: 20px;
   border-radius: 20px;
