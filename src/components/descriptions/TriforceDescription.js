@@ -17,7 +17,7 @@ export default class TriforceDescription extends Component {
             <section className="project-sites">
               <a
                 className="plink"
-                href="https://ptrivia.netlify.app/"
+                href="https://triforce-trivia.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

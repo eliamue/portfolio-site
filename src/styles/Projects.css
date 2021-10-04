@@ -37,6 +37,7 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    overflow: visible;
 }
 
 .safesrc-logo {
@@ -125,13 +126,16 @@ header {
     display: flex;
     flex-direction: column;
     margin-bottom: 20vmin;
+    flex-wrap: wrap;
+    overflow: visible;
 }
 
 .proj-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    position: absolute;
+    flex-wrap: wrap;
+    overflow: visible;
 }
 
 .project-name {

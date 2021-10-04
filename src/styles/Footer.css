@@ -6,6 +6,7 @@
   color: gold;
   padding: 10px;
   text-align: center;
+  align-items: center;
   justify-content: space-around;
   position: absolute;
   width: 100%;
@@ -14,8 +15,8 @@
 
 .abt,
 .cont,
-.hme,
-.prj {
+.prj,
+.theme-btn {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,13 +25,19 @@
   padding: 8px;
   font-size: 2.7vmin;
   border: 3px double rgb(50, 0, 0);
+  font-family: Alice;
+  color: -webkit-link;
+  text-decoration: underline;
 }
 
 .abt:hover,
 .cont:hover,
 .home:hover,
-.prj:hover {
+.prj:hover,
+.theme-btn:hover {
   box-shadow: 5px 5px 15px rgb(65, 10, 10);
+  cursor: pointer;
+  color: white;
 }
 
 .nav-link:hover {

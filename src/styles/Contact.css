@@ -8,6 +8,7 @@
     border-radius: 50px 50px;
     padding: 20px;
     font-family: 'Cormorant Garamond';
+    font-size: 20px;
 }
 
 .li-link,
@@ -19,6 +20,7 @@
   text-align: center;
   background-color: rgba(210, 158, 130, 0.817);
   font-family: 'Cormorant Garamond';
+  border: 5px double rgb(99, 4, 118);
 }
 
 header {

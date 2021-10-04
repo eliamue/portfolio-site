@@ -30,7 +30,7 @@ export default class TorrDescription extends Component {
                 Deployed Site
               </a>
               <a
-                className="torr-link"
+                className="plink"
                 href="https://github.com/MissaelOrtiz/The-Tales-of-Torr-The-Quest-to-Defeat-the-Everlasting-Dragon"
                 target="_blank"
                 rel="noopener noreferrer"

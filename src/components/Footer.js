@@ -4,6 +4,7 @@ import '../styles/Footer.css';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './themes/GlobalStyles';
 import { lightTheme, darkTheme } from './themes/Theme';
+import icon from '../styles/icon.png'
 
 const Footer = () => {
     const [theme, setTheme] = useState('light');
@@ -11,35 +12,45 @@ const Footer = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light')
 }
             return (
-            <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <>
-      <GlobalStyles/>
-              <nav className="nav-bar">
-                <span className="cont">
-                  <Link className="nav-link" to={'/contact'}>
-                    Contact
-                  </Link>
-                </span>
+              <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+                <>
+                  <GlobalStyles />
+                  <nav className="nav-bar">
+                    <span className="cont">
+                      <Link className="nav-link" to={'/contact'}>
+                        Contact
+                      </Link>
+                    </span>
 
-                <span className="abt">
-                  <Link className="nav-link" to={'/about'}>
-                    About
-                  </Link>
-                </span>
+                    <span className="abt">
+                      <Link className="nav-link" to={'/about'}>
+                        About
+                      </Link>
+                    </span>
 
-                <span className="prj">
-                  <Link className="nav-link" to={'/projects'}>
-                    Projects
-                  </Link>
-                </span>
-                <button onClick={themeToggler}>Toggle Dark/Light Mode</button>
-                <span className="hme">
-                  <Link className="nav-link" to={'/'}>
-                    Home
-                  </Link>
-                </span>
-              </nav>
-              </>
+                    <span className="hme">
+                      <Link className="nav-link" to={'/'}>
+                        <img
+                          className="home-icon"
+                          src={icon}
+                          alt="home icon"
+                          height="50px"
+                          width="50px"
+                        />
+                      </Link>
+                    </span>
+
+                    <span className="prj">
+                      <Link className="nav-link" to={'/projects'}>
+                        Projects
+                      </Link>
+                    </span>
+
+                    <button onClick={themeToggler} className="theme-btn">
+                      Theme
+                    </button>
+                  </nav>
+                </>
               </ThemeProvider>
             );
       }
