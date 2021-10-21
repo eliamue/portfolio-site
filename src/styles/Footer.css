@@ -15,8 +15,7 @@
 
 .abt,
 .cont,
-.prj,
-.theme-btn {
+.prj {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,14 +31,28 @@
   text-decoration: underline;
 }
 
+.theme-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+}
+
 .abt:hover,
 .cont:hover,
 .home:hover,
-.prj:hover,
-.theme-btn:hover {
+.prj:hover {
   box-shadow: 5px 5px 15px rgb(65, 10, 10);
   cursor: pointer;
   color: rgb(255, 197, 213);;
+}
+
+.toggle-image:hover {
+  cursor: pointer;
+    box-shadow: 0px 0px 15px 10px rgb(18, 0, 70);
+    border: 1px solid black;
+    border-radius: 300px;
 }
 
 .nav-link:hover {
@@ -57,4 +70,12 @@
   box-shadow: 1px 1px 10px rgb(65, 10, 10);
   border-radius: 200px;
   background-color: rgb(31, 0, 0);
+}
+
+.toggle-image {
+  height: 50px;
+  border-radius: 300px;
+  border: 1px solid black;
+  background-color: black;
+  box-shadow: 0px 0px 15px 10px rgb(19, 0, 0);
 }

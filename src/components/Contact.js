@@ -13,6 +13,7 @@ export default class Contact extends Component {
         </section>
 
         <section className="cont-links">
+          <h2>Under Construction</h2>
           <a
             className="li-link"
             href="https://www.linkedin.com/in/eliamue/"
@@ -30,10 +31,7 @@ export default class Contact extends Component {
             GitHub
           </a>
           <div className="e-link">
-          <Mailto
-            label="E-Mail"
-            mailto="mailto:eliamue@live.com"
-          />
+            <Mailto label="E-Mail" mailto="mailto:eliamue@live.com" />
           </div>
         </section>
       </div>

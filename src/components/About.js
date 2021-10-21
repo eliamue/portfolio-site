@@ -13,8 +13,7 @@ export default class About extends Component {
         </section>
 
         <section className="about-desc">
-          <p>I'm a human person</p>
-          <p>Wow</p>
+          <p>Under Construction</p>
         </section>
         
       </div>

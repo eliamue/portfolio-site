@@ -4,7 +4,8 @@ import '../styles/Footer.css';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './themes/GlobalStyles';
 import { lightTheme, darkTheme } from './themes/Theme';
-import icon from '../assets/icon.png'
+import icon from '../assets/icon.png';
+import dark from '../assets/dark.png';
 
 const Footer = () => {
     const [theme, setTheme] = useState('dark');
@@ -47,7 +48,7 @@ const Footer = () => {
                     </span>
 
                     <button onClick={themeToggler} className="theme-btn">
-                      Theme
+                      <img className="toggle-image" src={dark} alt="toggle theme" />
                     </button>
                   </nav>
                 </>
