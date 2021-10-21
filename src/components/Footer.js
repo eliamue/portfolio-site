@@ -4,10 +4,10 @@ import '../styles/Footer.css';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './themes/GlobalStyles';
 import { lightTheme, darkTheme } from './themes/Theme';
-import icon from '../styles/icon.png'
+import icon from '../assets/icon.png'
 
 const Footer = () => {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dark');
     const themeToggler = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light')
 }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../../styles/Descriptions.css';
+import github from '../../assets/github.png';
+import website from '../../assets/website.png';
 
 export default class TriforceDescription extends Component {
   handleClick = () => {
@@ -10,26 +12,27 @@ export default class TriforceDescription extends Component {
       <div className="modal">
         <div className="modal_content">
           <section className="pop">
+            <h1 className="triforce-name">Triforce Trivia</h1>
             <p className="proj-description">
               Scooby Doo-themed trivia adventure game that dynamically changes
-              based on the success or failure of the user.
+              based on the success or failure of the user. Created by a remote
+              team of 3 during a 5-day sprint using React, Express, postgreSQL,
+              Node.js, CSS, and HTML.
             </p>
             <section className="project-sites">
               <a
-                className="plink"
                 href="https://triforce-trivia.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Deployed Site
+                <img className="website-logo" src={website} alt="website" />
               </a>
               <a
-                className="plink"
                 href="https://github.com/orgs/Triforce-Trivia/repositories"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Github
+                <img className="github-logo" src={github} alt="github" />
               </a>
             </section>
           </section>

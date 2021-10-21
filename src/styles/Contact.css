@@ -1,5 +1,5 @@
 .cont-links {
-    background-color: rgba(0, 0, 255, 0.358);
+    background-color: rgba(94, 35, 3, 0.721);
     display: flex;
     font-size: 30px;
     flex-direction: column;
@@ -8,7 +8,6 @@
     border-radius: 50px 50px;
     padding: 20px;
     font-family: 'Cormorant Garamond';
-    font-size: 20px;
 }
 
 .li-link,
@@ -18,16 +17,21 @@
   margin: 20px;
   border-radius: 20px;
   text-align: center;
-  background-color: rgba(210, 158, 130, 0.817);
+  background-color: rgba(184, 142, 3, 0.749);
   font-family: 'Cormorant Garamond';
   border: 5px double rgb(99, 4, 118);
+}
+
+.li-link:hover, .gh-link:hover, .e-link:hover {
+  box-shadow: 5px 5px 15px rgb(65, 10, 10);
+  cursor: pointer;
 }
 
 header {
   display: flex;
   flex-direction: row;
-  color: gold;
-  background-color: rgba(94, 35, 3, 0.721);
+  color: rgb(201, 194, 184);
+  background-color: rgb(28, 0, 1);
   position: absolute;
   width: 100%;
   box-shadow: 15px 5px 35px 5px black;
@@ -48,6 +52,7 @@ header {
 .contacts {
       display: flex;
       flex-direction: column;
+      width: fit-content;
 }
 
 .cont-container {

@@ -3,13 +3,11 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 5px;
-    color: yellow;
+    color: rgb(242, 226, 102);
 }
 
-.close {
-    color: rgb(199, 15, 46);
-    font-size: large;
-    height: fit-content;
+.plink:hover {
+    box-shadow: 5px 5px 15px rgb(65, 10, 10);
 }
 
 .modal_content {
@@ -18,13 +16,65 @@
 }
 
 .project-name {
-    color: rgb(232, 197, 0);
-    border-radius: 20px;
-    background-color: rgba(97, 24, 76, 0.913);
     margin: 3vmin;
     margin-top: 5vmin;
-    font-family: Alice;
     padding-left: 15px;
     padding-right: 15px;
-    box-shadow: 5px 5px 30px 5px rgb(33, 6, 6);
+    border: none;
+    color: silver;
+    font-size: 30px;
+}
+
+.vibn-name {
+    color: magenta;
+    font-size: 30px;
+}
+
+.torr-name {
+    color: red;
+    font-size: 30px;
+}
+
+.triforce-name {
+    color: rgb(236, 242, 166);
+    font-size: 30px;
+}
+
+.safesrc-name {
+    color: rgb(175, 255, 105);
+    font-size: 30px;
+}
+
+.pop {
+    background-image: none;
+}
+
+.proj-description, .disclaimer {
+    background-color: rgba(182, 237, 237, 0.886);
+    padding: 10px;
+    border-radius: 20px;
+    font-family: Alice;
+    margin: 20px;
+}
+
+.github-logo, .website-logo {
+    height: 10vmin;
+    background-color: rgb(176, 208, 228);
+    border: 2px solid rgb(191, 0, 255);
+    box-shadow: 10px 8px 15px 1px black;
+}
+
+.github-logo {
+    border-radius: 10px;
+}
+
+.website-logo {
+    border-radius: 300px;
+    padding: 1px;
+}
+
+.github-logo:hover, .website-logo:hover {
+    background-color: rgb(168, 159, 222);
+    border: 2px solid blue;
+    box-shadow: 10px 8px 15px 1px rgb(43, 0, 255);
 }

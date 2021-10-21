@@ -1,12 +1,13 @@
 export const lightTheme = {
-  body: '#FFF',
+  body: 'rgb(201, 194, 184)',
   text: '#363537',
-  toggleBorder: '#FFF',
+  color: 'black',
+  toggleBorder: 'rgb(201, 194, 184)',
   background: '#363537',
   fontFamily: 'OpenDyslexic-Regular',
 };
 export const darkTheme = {
-  body: '#363537',
+  body: 'rgba(45, 5, 5)',
   text: '#FAFAFA',
   toggleBorder: '#6B8096',
   background: '#999',

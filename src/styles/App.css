@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,550;1,300&display=swap');
 
+:global #root {
+  --a-color: rgb(228, 225, 216);
+  --b-color: rgb(255, 197, 213);
+  --c-color: rgb(222, 182, 148);
+  --d-color: rgb(255, 235, 119);
+  --e-color: rgba(184, 142, 3, 0.749);
+  --f-color: rgba(184, 142, 3, 0.495);
+  --g-color: rgba(94, 35, 3, 0.721);
+  --h-color: rgba(201, 24, 24, 0.329);
+  --i-color: rgb(65, 10, 10);
+  --j-color: rgb(52, 52, 52);
+}
+
 html,
 body {
-  background-image: url('rose.png');
-  background-repeat: no-repeat;
   background-size: 100%;
   height: 100%;
   width: 100%;
-  background-color: rgb(52, 52, 52);
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -30,4 +40,20 @@ header {
     height: 100%;
     display: flex;
     bottom: 0;
+}
+
+a:-webkit-any-link:hover {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(255, 197, 213);
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(33, 4, 33);
+    font-weight: bold;
+    font-size: 3.5vmin;
 }
