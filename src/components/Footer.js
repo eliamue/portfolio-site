@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './themes/GlobalStyles';
 import { lightTheme, darkTheme } from './themes/Theme';
 import icon from '../assets/icon.png';
-import dark from '../assets/dark.png';
+import darkmode from '../assets/darkmode.png';
 
 const Footer = () => {
     const [theme, setTheme] = useState('dark');
@@ -42,13 +42,13 @@ const Footer = () => {
                     </span>
 
                     <span className="prj">
-                      <Link className="nav-link" to={'/projects'}>
+                      <Link className="nav-link" to={'/projectlist'}>
                         Projects
                       </Link>
                     </span>
 
                     <button onClick={themeToggler} className="theme-btn">
-                      <img className="toggle-image" src={dark} alt="toggle theme" />
+                      <img className="toggle-image" src={darkmode} alt="toggle theme" />
                     </button>
                   </nav>
                 </>

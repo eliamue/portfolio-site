@@ -10,8 +10,9 @@ import Projects from './components/Projects.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
 import Footer from './components/Footer';
+import ProjectList from './components/ProjectList';
 
-const App = () => {
+function App() {
   return (
     <div>
       <Router>
@@ -26,6 +27,11 @@ const App = () => {
             path="/projects"
             render={(routerProps) => <Projects {...routerProps} />}
           />
+          <Route
+            exact
+            path="/projectlist">
+              <ProjectList />
+          </Route>
           <Route
             exact
             path="/about"

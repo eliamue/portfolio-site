@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/Descriptions.css';
 import github from '../../assets/github.png';
 import website from '../../assets/website.png';
@@ -24,12 +25,7 @@ export default class TorrDescription extends Component {
               publishing and getting full authorization from Spotify.
             </p>
             <p className="disclaimer">
-              *Due to Spotify's development program limitations, Vibn is
-              curently inaccessible to users who are not manually added to a
-              capped list of 25 users via their Spotify account email. Click{' '}
-              <a href="demolink">here</a> for a preview of Vibn, or{' '}
-              <a href="emailme">contact me</a> to be temporarily added to the
-              list of authorized users and try it out yourself!
+              *Due to Spotify's development program limitations, Vibn is curently inaccessible to users who are not manually added to a capped list of 25 users via their Spotify account email. A demo version is under construction to provide a preview of the app, and will be available soon. <Link to="/contact" style={{ fontSize: '13px', color: 'white' }}>Contact me</Link> to be added to the list of authorized users and try out the full app yourself!
             </p>
 
             <section className="project-sites">

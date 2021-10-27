@@ -1,13 +1,13 @@
 .cont-links {
-    background-color: rgba(94, 35, 3, 0.721);
-    display: flex;
-    font-size: 30px;
-    flex-direction: column;
-    margin: 30vmin;
-    text-align: center;
-    border-radius: 50px 50px;
-    padding: 20px;
-    font-family: 'Cormorant Garamond';
+  background-color: rgba(94, 35, 3, 0.721);
+  display: flex;
+  font-size: 30px;
+  flex-direction: column;
+  margin: 30vmin;
+  text-align: center;
+  border-radius: 50px 50px;
+  padding: 20px;
+  font-family: 'Cormorant Garamond';
 }
 
 .li-link,
@@ -50,12 +50,12 @@ header {
 }
 
 .contacts {
-      display: flex;
-      flex-direction: column;
-      width: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
 }
 
 .cont-container {
-      width: 100%;
-      position: absolute;
+  width: 100%;
+  position: absolute;
 }
